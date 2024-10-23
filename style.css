@@ -1,0 +1,156 @@
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 100px;
+background-color: aliceblue;
+}
+.Translit{
+    font-family: monospace;
+    font-size: 30px;
+    color:rgb(124, 4, 236);
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 80px;
+}
+.flex-container1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input{
+    position: absolute;
+    font-size: 16px;
+    padding: 16px 21px;
+    width: 400px;
+    border-radius: 14px;
+}
+.addButton{
+position: absolute;
+margin-left: 300px ;
+font-size: 13px;
+height: 33px;
+background-color: black;
+color: aliceblue;
+border-radius: 10px;
+
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+    min-height: 400px;
+}
+.card1{
+    background-color: rgb(249, 249, 249);
+    min-height: 400px;
+    width: 350px;
+}
+
+.card2{
+    background-color: rgb(185, 182, 182);
+    min-height: 400px;
+    width: 350px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+    padding: 16px;
+}
+
+.row:last-child {
+    border-bottom: none;
+}
+
+.row:first-child {
+    border-bottom: 2px solid black;
+}
+
+.indexRow {
+ font-size: 20px;
+ font-weight: 600;   
+}
+
+.delete-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.russianRow {
+    padding: 16px;
+    border-bottom: 2px solid black;
+    display: flex;
+    gap: 28px
+}
+
+.russianWord {
+    font-size: 24px;
+}
+
+.russianRow:last-child{
+    border-bottom: none;
+}
+
+.russianRow:first-child{
+    border-bottom: 2px solid black;
+}
+
+.translitWord {
+    font-size: 24px;
+}
+
+.stick{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    width: 5px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+
+}
+
+.deleteAll{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: rgba(173, 173, 173, 1);
+    letter-spacing: 1px;
+    height: 35px;
+    width: 150px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+@media(max-width:360px) and (min-width: 0px) {
+    .cards{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .palka{
+        height: 10px;
+        width: 350px;
+    }
+        .card1{
+            height: 800px;
+            width: 400px;
+        }
+        .card2{
+            height: 800px;
+            width: 400px;
+        }
+    }
